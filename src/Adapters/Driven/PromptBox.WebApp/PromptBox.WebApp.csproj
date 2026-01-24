@@ -7,6 +7,15 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Core\PromptBox.Application\PromptBox.Application.csproj" />
+    <ProjectReference Include="..\..\..\Core\PromptBox.Domain\PromptBox.Domain.csproj" />
     <ProjectReference Include="..\..\Driving\PromptBox.Persistence\PromptBox.Persistence.csproj" />
   </ItemGroup>
 
