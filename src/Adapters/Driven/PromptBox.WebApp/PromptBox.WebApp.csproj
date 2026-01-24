@@ -6,4 +6,8 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\Driving\PromptBox.Persistence\PromptBox.Persistence.csproj" />
+  </ItemGroup>
+
 </Project>
