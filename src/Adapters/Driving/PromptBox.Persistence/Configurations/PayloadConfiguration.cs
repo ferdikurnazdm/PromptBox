@@ -22,6 +22,6 @@ public sealed class PayloadConfiguration : IEntityTypeConfiguration<Payload>
 
         builder.HasOne(x => x.Prompt)
                .WithMany(x => x.Payloads)
-               .HasForeignKey(x => x.Prompt);
+               .HasForeignKey(x => x.PromptId);
     }
 }
