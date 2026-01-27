@@ -1,12 +1,37 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\Users\\ferdi.kurnaz\\projects\\PromptBox\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{CA2B0E60-67DA-45F9-AB3C-6C33534F757B}|src\\Adapters\\Driven\\PromptBox.WebApp\\PromptBox.WebApp.csproj|d:\\users\\ferdi.kurnaz\\projects\\promptbox\\src\\adapters\\driven\\promptbox.webapp\\areas\\setup\\controllers\\setupcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CA2B0E60-67DA-45F9-AB3C-6C33534F757B}|src\\Adapters\\Driven\\PromptBox.WebApp\\PromptBox.WebApp.csproj|solutionrelative:src\\adapters\\driven\\promptbox.webapp\\areas\\setup\\controllers\\setupcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SetupController.cs",
+              "DocumentMoniker": "D:\\Users\\ferdi.kurnaz\\projects\\PromptBox\\src\\Adapters\\Driven\\PromptBox.WebApp\\Areas\\Setup\\Controllers\\SetupController.cs",
+              "RelativeDocumentMoniker": "src\\Adapters\\Driven\\PromptBox.WebApp\\Areas\\Setup\\Controllers\\SetupController.cs",
+              "ToolTip": "D:\\Users\\ferdi.kurnaz\\projects\\PromptBox\\src\\Adapters\\Driven\\PromptBox.WebApp\\Areas\\Setup\\Controllers\\SetupController.cs",
+              "RelativeToolTip": "src\\Adapters\\Driven\\PromptBox.WebApp\\Areas\\Setup\\Controllers\\SetupController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvxEAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-27T06:09:34.935Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }
