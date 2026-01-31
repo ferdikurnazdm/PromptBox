@@ -9,10 +9,15 @@
   <ItemGroup>
     <Folder Include="Extensions\" />
     <Folder Include="Helpers\" />
+    <Folder Include="UseCases\Users\" />
     <Folder Include="Validators\" />
     <Folder Include="Services\" />
     <Folder Include="Ports\" />
     <Folder Include="UseCases\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\PromptBox.Domain\PromptBox.Domain.csproj" />
   </ItemGroup>
 
 </Project>

@@ -1,0 +1,75 @@
+﻿@model RegisterDto
+@{
+    Layout = null; // Auth sayfaları için genelde layout kullanılmaz
+}
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>PromptBox | Register</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- AdminLTE CSS -->
+    <link rel="stylesheet" href="~/dist/css/adminlte.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" />
+</head>
+
+<body class="register-page bg-body-secondary">
+
+<div class="register-box">
+    <div class="card card-outline card-primary">
+        <div class="card-header text-center">
+            <a asp-controller="Home" asp-action="Index" class="h1">
+                <b>Prompt</b>Box
+            </a>
+        </div>
+
+        <div class="card-body register-card-body">
+            <p class="register-box-msg">Yeni üyelik oluştur</p>
+
+            <form asp-action="Register" asp-controller="Account" method="post">
+                
+                <div class="input-group mb-3">
+                    <input asp-for="Fullname" class="form-control" placeholder="Full Name" />
+                    <div class="input-group-text">
+                        <span class="bi bi-person"></span>
+                    </div>
+                </div>
+
+                <div class="input-group mb-3">
+                    <input asp-for="Email" class="form-control" placeholder="Email" />
+                    <div class="input-group-text">
+                        <span class="bi bi-envelope"></span>
+                    </div>
+                </div>
+
+                <div class="input-group mb-3">
+                    <input asp-for="Password" type="password" class="form-control" placeholder="Password" />
+                    <div class="input-group-text">
+                        <span class="bi bi-lock-fill"></span>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-8">
+                    </div>
+
+                    <div class="col-4">
+                        <button type="submit" class="btn btn-primary w-100">
+                            Kayıt Ol
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- Scripts -->
+<script src="~/dist/js/adminlte.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

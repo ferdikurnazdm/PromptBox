@@ -9,5 +9,7 @@ public interface IUserRepository
     Task UpdateUserAsync(User user);
     Task<List<User>> GetAllUserAsync();
     Task<User?> GetUserByIdAsync(Guid id);
+    Task<User?> GetUserByEmailAsync(string email);
+    Task<int> GetUsersCountAsync();
     Task<int> SaveChangesAsync();
 }

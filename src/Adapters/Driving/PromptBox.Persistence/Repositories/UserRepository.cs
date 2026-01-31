@@ -26,10 +26,21 @@ public sealed class UserRepository : IUserRepository
             .ToListAsync();
     }
 
+    public Task<User?> GetUserByEmailAsync(string email)
+    {
+        return _appDbContext.Users
+            .FirstOrDefaultAsync(u => u.Email.Value == email);
+    }
+
     public async Task<User?> GetUserByIdAsync(Guid id)
     {
         return await _appDbContext.Users
             .FindAsync(id);
+    }
+
+    public async Task<int> GetUsersCountAsync()
+    {
+        return await _appDbContext.Users.CountAsync();
     }
 
     public async Task RemoveUserAsync(User user)

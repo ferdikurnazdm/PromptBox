@@ -14,12 +14,12 @@ public sealed class UserConfiguration : IEntityTypeConfiguration<User>
         builder.Property(x => x.Id)
                .IsRequired();
 
-        builder.Property(x => x.Username)
+        builder.Property(x => x.Email)
                .HasMaxLength(100)
                .IsRequired()
                .HasConversion(
                  toDb => toDb.Value,
-                 fromDb => new Username(fromDb));
+                 fromDb => new Email(fromDb));
 
         builder.Property(x => x.Password)
                .HasMaxLength(100)
