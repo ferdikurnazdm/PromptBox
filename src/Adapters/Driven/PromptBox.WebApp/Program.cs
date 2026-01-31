@@ -1,4 +1,7 @@
+using Microsoft.AspNetCore.Authentication.Cookies;
+using PromptBox.Domain.Repositories;
 using PromptBox.Persistence.Extensions;
+using PromptBox.Persistence.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -16,8 +19,19 @@ builder.Configuration.AddJsonFile($"Configurations/databasesettings.{builder.Env
 // services 
 builder.Services.AddControllersWithViews();
 builder.Services.AddAppDatabase(builder.Configuration);
+builder.Services.AddScoped<IUserRepository, UserRepository>();
+builder.Services
+    .AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
+    .AddCookie(options =>
+    {
+        options.LoginPath = "/Account/Login";
+        options.LogoutPath = "/Account/Logout";
+        options.AccessDeniedPath = "/Account/Login";
+        options.ExpireTimeSpan = TimeSpan.FromDays(7);
+        options.SlidingExpiration = true;
+    });
 
-
+builder.Services.AddAuthorization();
 
 
 var app = builder.Build();
@@ -35,6 +49,8 @@ if (!app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 
 app.UseRouting();
+
+app.UseAuthentication();
 
 app.UseAuthorization();
 

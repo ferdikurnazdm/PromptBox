@@ -11,8 +11,8 @@ using PromptBox.Persistence.Context;
 namespace PromptBox.Persistence.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20260124150940_Initial_mig")]
-    partial class Initial_mig
+    [Migration("20260131174133_initial_mig")]
+    partial class initial_mig
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -76,12 +76,12 @@ namespace PromptBox.Persistence.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("TEXT");
 
-                    b.Property<string>("Password")
+                    b.Property<string>("Email")
                         .IsRequired()
                         .HasMaxLength(100)
                         .HasColumnType("TEXT");
 
-                    b.Property<string>("Username")
+                    b.Property<string>("Password")
                         .IsRequired()
                         .HasMaxLength(100)
                         .HasColumnType("TEXT");

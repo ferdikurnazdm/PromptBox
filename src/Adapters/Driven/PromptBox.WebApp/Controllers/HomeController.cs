@@ -1,10 +1,12 @@
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using PromptBox.WebApp.Models;
 using System.Diagnostics;
 
 namespace PromptBox.WebApp.Controllers;
 
-public class HomeController : Controller
+[Authorize]
+public sealed class HomeController : Controller
 {
     public IActionResult Index()
     {
