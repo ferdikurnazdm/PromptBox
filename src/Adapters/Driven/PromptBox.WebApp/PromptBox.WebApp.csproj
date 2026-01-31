@@ -21,7 +21,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Areas\Setup\Views\" />
+    <Folder Include="Views\Account\" />
   </ItemGroup>
 
 </Project>
