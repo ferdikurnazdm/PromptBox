@@ -5,6 +5,9 @@ using PromptBox.Persistence.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
 
+// aspire
+builder.AddServiceDefaults();
+
 // configurations
 builder.Configuration.SetBasePath(builder.Environment.ContentRootPath);
 builder.Configuration.AddJsonFile($"Configurations/appsettings.json", optional: false, reloadOnChange: true);
@@ -62,5 +65,7 @@ app.MapControllerRoute(
     .WithStaticAssets();
 
 await app.ApplyMigrationsAsync();
+
+app.MapDefaultEndpoints();
 
 app.Run();

@@ -15,6 +15,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\..\Aspire\PromptBox.ServiceDefaults\PromptBox.ServiceDefaults.csproj" />
     <ProjectReference Include="..\..\..\Core\PromptBox.Application\PromptBox.Application.csproj" />
     <ProjectReference Include="..\..\..\Core\PromptBox.Domain\PromptBox.Domain.csproj" />
     <ProjectReference Include="..\..\Driving\PromptBox.Persistence\PromptBox.Persistence.csproj" />

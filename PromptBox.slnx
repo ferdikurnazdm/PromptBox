@@ -38,6 +38,10 @@
     <File Path="src/Adapters/Driving/.gitkeep" />
     <Project Path="src/Adapters/Driving/PromptBox.Persistence/PromptBox.Persistence.csproj" Id="8e8bce85-a152-4df6-8a58-a0cc732acf5c" />
   </Folder>
+  <Folder Name="/src/Aspire/">
+    <Project Path="src/Aspire/PromptBox.AppHost/PromptBox.AppHost.csproj" />
+    <Project Path="src/Aspire/PromptBox.ServiceDefaults/PromptBox.ServiceDefaults.csproj" />
+  </Folder>
   <Folder Name="/src/Core/">
     <File Path="src/Core/.gitkeep" />
     <Project Path="src/Core/PromptBox.Application/PromptBox.Application.csproj" Id="b7e43e8d-1750-4048-a038-efbccc27c3e0" />
