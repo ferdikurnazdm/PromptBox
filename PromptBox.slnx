@@ -1,29 +1,4 @@
 <Solution>
-  <Folder Name="/doc/">
-    <File Path="doc/.gitkeep" />
-  </Folder>
-  <Folder Name="/references/">
-    <File Path="references/.gitkeep" />
-  </Folder>
-  <Folder Name="/reports/">
-    <File Path="reports/.gitkeep" />
-  </Folder>
-  <Folder Name="/reports/figures/">
-    <File Path="reports/figures/.gitkeep" />
-  </Folder>
-  <Folder Name="/Solution Items/">
-    <File Path=".dockerignore" />
-    <File Path=".editorconfig" />
-    <File Path=".gitignore" />
-    <File Path=".gitkeep" />
-    <File Path="CHANGELOG.md" />
-    <File Path="Directory.Build.props" />
-    <File Path="Directory.Packages.props" />
-    <File Path="docker-compose.yml" />
-    <File Path="Dockerfile" />
-    <File Path="LICENSE" />
-    <File Path="README.md" />
-  </Folder>
   <Folder Name="/src/">
     <File Path="src/.gitkeep" />
   </Folder>
@@ -37,10 +12,6 @@
   <Folder Name="/src/Adapters/Driving/">
     <File Path="src/Adapters/Driving/.gitkeep" />
     <Project Path="src/Adapters/Driving/PromptBox.Persistence/PromptBox.Persistence.csproj" Id="8e8bce85-a152-4df6-8a58-a0cc732acf5c" />
-  </Folder>
-  <Folder Name="/src/Aspire/">
-    <Project Path="src/Aspire/PromptBox.AppHost/PromptBox.AppHost.csproj" />
-    <Project Path="src/Aspire/PromptBox.ServiceDefaults/PromptBox.ServiceDefaults.csproj" />
   </Folder>
   <Folder Name="/src/Core/">
     <File Path="src/Core/.gitkeep" />
